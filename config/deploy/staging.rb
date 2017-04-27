@@ -1,17 +1,3 @@
-set :stage, :production
-
-# Define roles, user and IP address of deployment server
-# role :name, %{[user]@[IP adde.]}
-
- role :app, %w{spowers@192.168.2.151}
- role :web, %w{spowers@192.168.2.151}
- role :db,  %w{spowers@192.168.2.151}
-
-# Define server(s)
-
-server '192.168.2.151', user: 'spowers', roles: %w{web app}
-
-
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
